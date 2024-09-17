@@ -29,8 +29,6 @@ screen.debug(<component/>)
 ```
 
 ## What is the difference between null and undefined in virtual DOM assertion
-Sure! Here's a simpler explanation of the difference between `null` and `undefined` in virtual DOM testing:
-
 In **Jest** testing with `@testing-library/react`, the matcher **`toBeInTheDocument()`** is used to check if an element **exists** in the DOM (virtual DOM in this case). It confirms that the element is present and part of the DOM tree.
 
 ### Key Differences Between `toBeInTheDocument()` and Other Matchers:
