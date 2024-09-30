@@ -77,3 +77,14 @@ In **Jest** testing with `@testing-library/react`, the matcher **`toBeInTheDocum
 - **`toBeUndefined()`**: Checks that a variable or query result hasn’t been assigned a value.
 
 So, **`toBeInTheDocument()`** is the go-to matcher when you want to assert that an element is properly rendered and part of the DOM structure in your tests.
+
+# How to mock download file?
+```
+mockDownloadFile.mockResolvedValueOnce(
+      new Response(new Blob(["3"], { type: "text/html" }), OK),
+    );
+```
+
+The snippet mocks the DownloadFile function to return a resolved promise once. When called, it will resolve with a Response object containing:
+- A Blob with the string "3" and content type text/html.
+- An HTTP status code of OK (probably 200).
